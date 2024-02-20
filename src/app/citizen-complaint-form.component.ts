@@ -2,7 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
 } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {
   CitizenComplaintRecord,
@@ -13,7 +13,7 @@ import {
 @Component({
   selector: 'app-citizen-complaint-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, ReactiveFormsModule],
   template: `
     <form>
       <button type="submit">Submit</button>
