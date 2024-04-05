@@ -5,10 +5,10 @@ import { CitizenComplaintComponent } from './citizen-complaint.component';
 @Component({
   selector: 'app-root',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CitizenComplaintComponent],
   template: `
     <app-citizen-complaint />
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {}

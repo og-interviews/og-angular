@@ -22,9 +22,10 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CitizenComplaintFormComponent {
-  model: CitizenComplaintRecord = citizenComplaintDefaultValue;
-  citizenComplaintMetadata = CitizenComplaintMetadata;
+  readonly model: CitizenComplaintRecord = citizenComplaintDefaultValue;
+  readonly citizenComplaintMetadata = CitizenComplaintMetadata;
 
-  async onSubmit() {
-  }
+  ngOnInit(): void {}
+
+  async onSubmit(): Promise<void> {}
 }
